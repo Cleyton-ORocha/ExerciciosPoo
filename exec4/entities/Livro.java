@@ -11,7 +11,7 @@ public class Livro {
     public Livro() {;
 	}
     
-    public Livro(String nome, Autor autor) {
+    public Livro( String nome, Autor autor) {
 		this.nome = nome;
 		this.autor = autor;
 
@@ -71,6 +71,21 @@ public class Livro {
 	public int getId() {
 		return id;
 	}
+
+	@Override
+	public String toString() {
+		return "Livro [id=" + id 
+				+ ", nome=" 
+				+ nome 
+				+ ", autor=" 
+				+ autor 
+				+ ", generoLiterario=" 
+				+ generoLiterario
+				+ ", valor=" 
+				+ valor 
+				+ "]";
+	}
     
+	
     
 }
